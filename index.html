@@ -5,59 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .section-header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-
-        .section-content {
-            padding: 10px;
-        }
-
-        /* Estilos para la foto de perfil */
-        .profile-picture {
-            float: left;
-            width: 150px;
-            height: 150px;
-            margin-right: 20px;
-            border-radius: 50%; /* Esto hace que la imagen sea redonda */
-            overflow: hidden; /* Asegura que la imagen sea redonda incluso si es cuadrada */
-        }
-
-        .profile-picture img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        /* Estilos CSS aquí */
     </style>
+    <script>
+        function imprimirCurriculum() {
+            window.print();
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -65,7 +19,7 @@
 
         <div class="section">
             <div class="profile-picture">
-                <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/312257846_10114737758665291_6588360857015169674_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=IUDCsLBjWYkAX8TRnGX&_nc_ht=scontent-mia3-2.xx&oh=00_AfBJocTQtcLqqQn88o1E65lzX7eptcgUAoJ7qCVvT-QYMw&oe=652435EE" alt="Mi Foto de Perfil">
+      <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/312257846_10114737758665291_6588360857015169674_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=IUDCsLBjWYkAX8TRnGX&_nc_ht=scontent-mia3-2.xx&oh=00_AfBJocTQtcLqqQn88o1E65lzX7eptcgUAoJ7qCVvT-QYMw&oe=652435EE" alt="Mi Foto de Perfil">
             </div>
             <div class="section-content">
                 <p><strong>Nombre:</strong> Tu Nombre</p>
@@ -91,6 +45,10 @@
                 <p><em>Universidad ABC - Ciudad, País</em></p>
                 <p><em>Año de Graduación</em></p>
             </div>
+        </div>
+
+        <div class="section">
+            <button onclick="imprimirCurriculum()">Imprimir Currículum</button>
         </div>
     </div>
 </body>
